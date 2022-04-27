@@ -18,6 +18,7 @@ func main() {
 }
 
 func port() string {
+	// Set PORT environment variable to change
 	port := os.Getenv("PORT")
 	if len(port) == 0 {
 		port = "8080"
